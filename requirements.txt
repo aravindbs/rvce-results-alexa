@@ -3,3 +3,4 @@ Flask==0.12.2
 beautifulsoup4==4.6.0
 flask_ask==0.9.8
 PyYAML==3.12
+gunicorn==19.7.1
