@@ -1,4 +1,4 @@
-adium-theme-ubuntu==0.3.4
+
 asn1crypto==0.24.0
 astroid==1.5.3
 backports.functools-lru-cache==1.4
