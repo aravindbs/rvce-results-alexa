@@ -1,0 +1,11 @@
+welcome : Welcome to RVCE Results! Please tell me your USN.
+
+notFound : Result not found for {{ usn }}
+
+found : | 
+  <speak>
+    Hello {{ result["name"] }} . Your SGPA is {{ result ["sgpa"] }}. Your grades are
+    {% for key, value in result["grades"].items() %}
+      <say-as interpret-as ="spell-out">{{ value }}</say-as> grade in {{ key }} <break time="0.5s"/>
+    {% endfor %}
+  </speak>
