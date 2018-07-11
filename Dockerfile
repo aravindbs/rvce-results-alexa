@@ -9,4 +9,4 @@ WORKDIR /Web
 
 EXPOSE 8000
 ENV FLASK_APP=app.py
-CMD flask run -h 0.0.0.0 -p $PORT
+CMD flask run -h 0.0.0.0 -p 5000

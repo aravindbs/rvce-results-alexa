@@ -20,12 +20,11 @@ def get_result (usn):
     name = result_soup.find('td', attrs={ 'data-title': 'NAME' }) #structures the results table 
     sgpa = result_soup.find('td', attrs={ 'data-title': 'SGPA' })
     grades = (result_soup.find_all('tbody')[1]).find_all('tr')
-    subject_grades = ""
     grd = {}
     for grade in grades:
         course = grade.find('td', attrs={ 'data-title': 'COURSE NAME'})
         gr = grade.find('td', attrs={ 'data-title': 'GRADE'})
-        if course is not None
+        if course is not None:
             grd[course.text] = gr.text
     res = {"usn" : usn , "name" : name.text, "sgpa" : sgpa.text ,"grades" : grd}     
     return res
